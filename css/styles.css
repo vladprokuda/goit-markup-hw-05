@@ -268,7 +268,7 @@ img {
     margin-left: auto;
     margin-right: auto;
 
-    transition-property: background-color;
+    transition-property: background-color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -276,6 +276,8 @@ img {
 .section-one button:hover,
 .section-one button:focus {
     background-color: var(--background-btn-main);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 /*----------заголовки секций */
@@ -369,7 +371,7 @@ img {
     position: relative;
 }
 
-.section-three-list h3 {
+.section-three-list p {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -380,9 +382,7 @@ img {
     background-color: var(--background-img);
 
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white-color);
 }
